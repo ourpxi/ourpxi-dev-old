@@ -32,7 +32,7 @@ export function Footer({
 	copyright,
 }: FooterProps) {
 	return (
-		<footer className="w-full border-t border-mocha-surface0">
+		<footer className="w-full">
 			<div className="w-full px-6 py-10">
 				<div className="flex flex-col gap-8">
 					<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -58,7 +58,7 @@ export function Footer({
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-6 text-sm text-mocha-subtext0">
+				<div className="flex flex-col gap-6 border-t border-mocha-surface0 pt-6 text-sm text-mocha-subtext0">
 						<nav className="flex flex-wrap gap-x-6 gap-y-3">
 							{mainLinks.map((link) => (
 								<a

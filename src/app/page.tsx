@@ -1,13 +1,68 @@
 import { Github, Twitter } from "lucide-react";
 import { Footer } from "@/components/ui/footer";
+import { Gallery4, type Gallery4Props } from "@/components/blocks/gallery4";
+
+const demoData: Gallery4Props = {
+	title: "Projects",
+	description:
+		"Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
+	items: [
+		{
+			id: "tetobot",
+			title: "TetoBot: A discord bot for Club del Chisme",
+			description:
+				"TetoBot is a private discord bot designed for the Club del Chisme community, focused on providing moderation and utilities to the server staff, as well as an integration with OpenAI to simulate a chat with the real Kasane Teto.",
+			href: "https://discord.gg/clubdelchismess",
+			image:
+				"https://cdn.discordapp.com/banners/1341458831267332167/10ed463d54851cab8e2bb71866ef7f2b.webp?size=1024",
+		},
+		{
+			id: "rompopetinsmp",
+			title: "RompopetinSMP: A Minecraft SMP Server",
+			description:
+				"A Minecraft SMP server made for the Rompopetin project and its community, Currently halted due to lack of resources.",
+			href: "https://rompopetin.lat",
+			image:
+				"https://cdn.discordapp.com/attachments/1320200367413395488/1474681349284827287/Eqn0PlA.png?ex=699abb87&is=69996a07&hm=cd093f34cb518f04c95b1e67a63a3addf384664661061a0b992a0d0167d1b5ed&",
+		},
+		{
+			id: "astro",
+			title: "Upcoming Project",
+			description: "Coming soon...",
+			href: "#",
+			image: "",
+		},
+		{
+			id: "react",
+			title: "Upcoming Project",
+			description: "Coming soon...",
+			href: "#",
+			image: "",
+		},
+		{
+			id: "nextjs",
+			title: "Upcoming Project",
+			description: "Coming soon...",
+			href: "#",
+			image: "",
+		},
+		{
+			id: "placeholder",
+			title: "Upcoming Project",
+			description: "Coming soon...",
+			href: "#",
+			image: "",
+		},
+	],
+};
 
 export default function Home() {
 	return (
 		<div className="flex flex-col min-h-screen bg-mocha-base text-mocha-text">
 			{/* profile */}
-			<div className="flex-1 flex items-center justify-center px-6 py-20">
+			<div className="flex items-center justify-center px-6 pt-16 pb-4">
 				<div className="w-full max-w-[650px] flex flex-col items-center">
-					{<img src="/profile.jpeg" alt="Profile Picture" className="w-50 h-50 rounded-full mb-12 profile-shadow" />}
+					{<img src="/profile.jpeg" alt="Profile Picture" className="w-50 h-50 rounded-full mb-12 profile-shadow profile-image" />}
 					{/* Name */}
 					<h1 className="text-4xl font-light text-center mb-6 tracking-tight">
 						Jean Serrano
@@ -16,34 +71,12 @@ export default function Home() {
 					<p className="text-center text-mocha-subtext0 mb-16 leading-relaxed max-w-sm">
 						Self-taught amateur developer and designer.
 					</p>
-					{/* nav */}
-					<nav className="flex flex-col items-center space-y-4 w-full">
-						<a
-							href="/work"
-							className="text-mocha-text transition-colors duration-200 hover:text-mocha-lavender"
-						>
-							work
-						</a>
-						<a
-							href="/thoughts"
-							className="text-mocha-text transition-colors duration-200 hover:text-mocha-lavender"
-						>
-							thoughts
-						</a>
-						<a
-							href="/lab"
-							className="text-mocha-text transition-colors duration-200 hover:text-mocha-lavender"
-						>
-							lab
-						</a>
-						<a
-							href="https://status.ourpxi.dev"
-							className="text-mocha-text transition-colors duration-200 hover:text-mocha-lavender"
-						>
-							Status
-						</a>
-					</nav>
 				</div>
+			</div>
+
+			{/* Gallery */}
+			<div className="flex items-center justify-center px-6 py-2">
+				<Gallery4 {...demoData} />
 			</div>
 
 			<Footer
