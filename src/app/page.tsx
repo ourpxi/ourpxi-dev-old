@@ -1,3 +1,6 @@
+import { Github, Twitter } from "lucide-react";
+import { Footer } from "@/components/ui/footer";
+
 export default function Home() {
 	return (
 		<div className="flex flex-col min-h-screen bg-mocha-base text-mocha-text">
@@ -43,22 +46,42 @@ export default function Home() {
 				</div>
 			</div>
 
-			{/* Footer */}
-			<footer className="px-6 py-8 border-t border-mocha-surface0">
-				<div className="max-w-[650px] mx-auto text-center">
-					<p className="text-sm text-mocha-subtext0">
-						© 2026 Jean Serrano | Colors by{" "}
-						<a
-							href="https://catppuccin.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="transition-colors duration-200 hover:text-mocha-lavender"
-						>
-							Catppuccin
-						</a>
-					</p>
-				</div>
-			</footer>
+			<Footer
+				logo={<img src="/favicon-32x32.png" alt="Logo" className="h-10 w-10 rounded-full" />}
+				brandName="Jean Serrano"
+				socialLinks={[
+					{
+						icon: <img src="/bmc-logo-no-background.png" alt="Buy Me A Coffee" className="h-5 w-5" />,
+						href: "https://buymeacoffee.com/justpaulcr",
+						label: "Buy Me A Coffee",
+					},
+					{
+						icon: <Github className="h-5 w-5" />,
+						href: "https://github.com/ourpxi",
+						label: "GitHub",
+					},
+				]}
+				mainLinks={[
+					{ href: "https://status.ourpxi.dev", label: "Services Status" },
+					{ href: "/contact", label: "Contact" },
+				]}
+				copyright={{
+					text: "© 2026 Jean Serrano",
+					license: (
+						<>
+							Colors by{" "}
+							<a
+								href="https://catppuccin.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="transition-colors duration-200 hover:text-mocha-lavender"
+							>
+								Catppuccin
+							</a>
+						</>
+					),
+				}}
+			/>
 		</div>
 	);
 }
