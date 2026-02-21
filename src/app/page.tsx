@@ -5,7 +5,7 @@ import { Gallery4, type Gallery4Props } from "@/components/blocks/gallery4";
 const demoData: Gallery4Props = {
 	title: "Projects",
 	description:
-		"Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
+		"Here are some of the projects I've worked on. Click on any of them to learn more!",
 	items: [
 		{
 			id: "tetobot",
@@ -20,7 +20,7 @@ const demoData: Gallery4Props = {
 			id: "rompopetinsmp",
 			title: "RompopetinSMP: A Minecraft SMP Server",
 			description:
-				"A Minecraft SMP server made for the Rompopetin project and its community, Currently halted due to lack of resources.",
+				"A Minecraft SMP server made for the Rompopetin project and its community.",
 			href: "https://rompopetin.lat",
 			image:
 				"https://cdn.discordapp.com/attachments/1320200367413395488/1474681349284827287/Eqn0PlA.png?ex=699abb87&is=69996a07&hm=cd093f34cb518f04c95b1e67a63a3addf384664661061a0b992a0d0167d1b5ed&",
