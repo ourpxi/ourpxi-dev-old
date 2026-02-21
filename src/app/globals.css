@@ -22,3 +22,7 @@ body {
 	color: var(--foreground);
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+.profile-shadow {
+	box-shadow: 0 0 20px rgba(180, 190, 254, 0.3);
+}
