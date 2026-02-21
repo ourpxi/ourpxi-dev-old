@@ -33,6 +33,12 @@ export default function Home() {
 						>
 							lab
 						</a>
+						<a
+							href="https://status.ourpxi.dev"
+							className="text-mocha-text transition-colors duration-200 hover:text-mocha-lavender"
+						>
+							Status
+						</a>
 					</nav>
 				</div>
 			</div>
