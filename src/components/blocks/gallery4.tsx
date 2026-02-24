@@ -73,6 +73,7 @@ export function Gallery4({ title, description, items }: Gallery4Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item) => {
           const isFeatured = item.id === "squidservers";
+          const hasStamp = item.id === "ecca";
 
           return (
             <div
@@ -107,6 +108,18 @@ export function Gallery4({ title, description, items }: Gallery4Props) {
                             SquidServers
                           </span>
                         </div>
+                      </div>
+                    )}
+                    {hasStamp && (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <img
+                          src="/stamp.png"
+                          alt="Stamp"
+                          className="w-48 h-48 object-contain"
+                          style={{
+                            filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3))"
+                          }}
+                        />
                       </div>
                     )}
                   </div>

@@ -13,7 +13,7 @@ const demoData: Gallery4Props = {
 			description:
 				"TetoBot is a private discord bot designed for the Club del Chisme community, focused on providing moderation and utilities to the server staff, as well as an integration with OpenAI to simulate a chat with the real Kasane Teto.",
 			role: "Owner / Lead Developer",
-			status: "In Development",
+			status: "Online",
 			statusHref: "https://status.ourpxi.dev",
 			href: "https://discord.gg/clubdelchismess",
 			image:
@@ -29,36 +29,27 @@ const demoData: Gallery4Props = {
 			statusHref: "https://status.ourpxi.dev",
 			href: "https://rompopetin.lat",
 			image:
-				"https://cdn.discordapp.com/attachments/1320200367413395488/1474681349284827287/Eqn0PlA.png?ex=699abb87&is=69996a07&hm=cd093f34cb518f04c95b1e67a63a3addf384664661061a0b992a0d0167d1b5ed&",
+				"/rompopetinsmp.png",
 		},
 		{
 			id: "squidservers",
 			title: "SquidServers",
 			description: "SquidServers is a Self Hosted game server dashboard with build in tunneling via playit.gg.",
 			role: "Support Team Member",
-			status: "In Development",
+			status: "Operational",
 			statusHref: "https://status.ourpxi.dev",
 			href: "https://squidservers.com",
 			image:
 				"https://github.com/SquidServers/image-canvas-generator/blob/main/example.png?raw=true",
 		},
 		{
-			id: "react",
-			title: "Upcoming Project",
+			id: "ecca",
+			title: "ECOCOARTE",
 			description: "Coming soon...",
-			role: "TBD",
+			role: "Lead Developer/Maker",
 			status: "Planned",
 			href: "#",
-			image: "",
-		},
-		{
-			id: "nextjs",
-			title: "Upcoming Project",
-			description: "Coming soon...",
-			role: "TBD",
-			status: "Planned",
-			href: "#",
-			image: "",
+			image: "/bannerecca.webp",
 		},
 		{
 			id: "placeholder",
