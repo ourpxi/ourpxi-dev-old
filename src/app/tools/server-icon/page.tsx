@@ -120,9 +120,6 @@ export default function ServerIconTool() {
 						<ArrowLeft className="w-4 h-4" />
 						Back to Tools
 					</Link>
-					<div className="w-20 h-20 rounded-full bg-mocha-surface0 flex items-center justify-center mb-8">
-						<span className="text-4xl">🖼️</span>
-					</div>
 					<h1 className="text-4xl font-light text-center mb-6 tracking-tight">
 						Server Icon Generator
 					</h1>
