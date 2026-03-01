@@ -25,7 +25,7 @@ const demoData: Gallery4Props = {
 			description:
 				"A Minecraft SMP server made for the Rompopetin project and its community.",
 			role: "Server Admin / Developer",
-			status: "Paused",
+			status: "Cancelled",
 			statusHref: "https://status.ourpxi.dev",
 			href: "https://rompopetin.lat",
 			image:
@@ -47,15 +47,15 @@ const demoData: Gallery4Props = {
 			title: "ECOCOARTE",
 			description: "Coming soon...",
 			role: "Lead Developer/Maker",
-			status: "Planned",
+			status: "On development",
 			href: "#",
 			image: "/bannerecca.webp",
 		},
 		{
-			id: "placeholder",
+			id: "Vyper",
 			title: "Upcoming Project",
 			description: "Coming soon...",
-			role: "TBD",
+			role: "Lead Developer",
 			status: "Planned",
 			href: "#",
 			image: "",
@@ -104,6 +104,7 @@ export default function Home() {
 				mainLinks={[
 					{ href: "https://status.ourpxi.dev", label: "Services Status" },
 					{ href: "/contact", label: "Contact" },
+					{ href: "/tools", label: "Tools" },
 				]}
 				copyright={{
 					text: "© 2026 Jean Serrano",
